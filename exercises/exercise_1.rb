@@ -3,11 +3,8 @@ require_relative '../setup'
 puts "\nExercise 1"
 puts "----------\n\n"
 
-# Your code goes below here ...
-
-
-class Store < ActiveRecord::Base
-end
+# class Store < ActiveRecord::Base
+# end
 
 # Burnaby (annual_revenue of 300000, carries men's and women's apparel)
 burnaby = Store.create(name:'Burnaby', annual_revenue: 300000, mens_apparel: true, womens_apparel:true)
