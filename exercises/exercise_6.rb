@@ -10,8 +10,8 @@ puts "----------\n\n"
 
 
 @store1.employees.create(first_name: "Vince", last_name: "Emond", hourly_rate: 69)
-@store1.employees.create(first_name: "Andy", last_name:"Bernard", hourly_rate:420)
-@store1.employees.create(first_name: "Jackie", last_name: "Voost", hourly_rate: 22)
+@store1.employees.create(first_name: "Andy", last_name:"Bernard", hourly_rate:199)
+@store1.employees.create(first_name: "Jackie", last_name: "Voost", hourly_rate: 45)
 
 @store2.employees.create(first_name: "Steph", last_name: "Sinclair", hourly_rate: 52)
 @store2.employees.create(first_name: "Tom", last_name: "Brown", hourly_rate: 96)

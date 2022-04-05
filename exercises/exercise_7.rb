@@ -6,7 +6,15 @@ require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
 
-puts "Exercise 7"
-puts "----------"
+puts "\nExercise 7"
+puts "----------\n\n"
 
-# Your code goes here ...
+puts "Pleaes provide a store name:"
+@store_name = gets.chomp
+
+new_store = Store.create(name: @store_name)
+
+# puts @store_name
+new_store.valid?
+
+puts new_store.errors.full_messages

@@ -31,7 +31,8 @@ end
 #   puts "All stores: #{store.name}"
 # end
 
-@womens_stores = Store.where(annual_revenue: -Float::INFINITY...1000000, womens_apparel: true)
+# @womens_stores = Store.where(annual_revenue: -Float::INFINITY...1000000, womens_apparel: true)
+@womens_stores = Store.where("womens_apparel = true AND annual_revenue < 1000000")
 
 @womens_stores.each do |store|
   puts "Women's Store #{store.name} has a revenue of #{store.annual_revenue}"

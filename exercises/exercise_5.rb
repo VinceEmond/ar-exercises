@@ -17,4 +17,8 @@ puts "\n The average revenue for all stores is #{Store.average(:annual_revenue).
 #   puts "#{store.name}: #{store.annual_revenue}"
 # end
 
-puts Store.where(annual_revenue: 1000000..Float::INFINITY).count
+
+# puts Store.where(annual_revenue: 1000000..Float::INFINITY).count
+puts Store.where("annual_revenue >= 1000000").count
+
+# @womens_stores = Store.where("womens_apparel = true AND annual_revenue < 1000000")
