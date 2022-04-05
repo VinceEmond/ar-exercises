@@ -11,5 +11,7 @@ puts "----------\n\n"
 @store2 = Store.find_by(id: 2)
 
 @store1.update(name: 'Squamish')
+
 # @store1.name = "Squamish"
 # @store1.save
+
